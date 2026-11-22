@@ -1,0 +1,22 @@
+Atue como um desenvolvedor Python experiente.
+Crie dois arquivos neste diretório: 'despesas.py' e 'test_despesas.py'.
+
+No arquivo 'despesas.py', desenvolva uma função chamada resumir_despesas(lancamentos) utilizando Python 3.11 ou superior e exclusivamente bibliotecas da própria linguagem.
+A função deverá receber uma lista de dicionários, cada um contendo:
+- categoria: nome da categoria da despesa.
+- valor: valor monetário representado como uma string decimal, utilizando ponto como separador.
+
+Requisitos funcionais:
+1. Agrupar os lançamentos por categoria, desconsiderando espaços no início e no final dos nomes.
+2. Calcular o valor total gasto em cada categoria.
+3. Informar a quantidade de lançamentos de cada categoria.
+4. Calcular o total geral de todas as despesas.
+5. Ordenar as categorias pelo maior gasto, em ordem decrescente. Em caso de empate, utilizar ordem alfabética.
+6. Utilizar Decimal para evitar imprecisões em cálculos monetários.
+7. Rejeitar registros inválidos, categorias vazias, valores não numéricos ou negativos, gerando ValueError.
+8. Para uma lista vazia, retornar um resultado válido com total igual a zero e nenhuma categoria.
+
+Formato esperado do retorno:
+Um dicionário contendo 'total_geral', 'quantidade_lancamentos' e 'por_categoria' (lista de dicionários com 'categoria', 'total' e 'quantidade'). Os valores monetários devem ser strings com duas casas decimais.
+
+No arquivo 'test_despesas.py', desenvolva testes automatizados utilizando unittest cobrindo casos normais, lista vazia, valores inválidos e situações de empate.

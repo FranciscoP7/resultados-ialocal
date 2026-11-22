@@ -1,0 +1,7 @@
+Explique as diferenças entre memória RAM, memória VRAM e armazenamento SSD no contexto da execução local de grandes modelos de linguagem (LLMs).
+Para cada componente, apresente:
+1. Sua principal função no computador.
+2. Como participa do carregamento e da execução de um modelo de IA.
+3. Quais problemas podem ocorrer quando sua capacidade é insuficiente.
+Ao final, explique por que a memória compartilhada do sistema não deve ser considerada equivalente à memória VRAM dedicada.
+Utilize linguagem clara e tecnicamente correta, sem ultrapassar 200 palavras. Não invente especificações de hardware que não foram fornecidas.

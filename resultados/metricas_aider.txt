@@ -1,0 +1,883 @@
+﻿=== RESULTADOS EXPERIMENTO DE PROGRAMAÇÃO (AIDER) ===
+
+--- Modelo: qwen_coder_7b | Rodada: 1 | Tempo: 37.5s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_caso_norma...ormal) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empate (test_despesas.TestResumirDespesas.test_empate) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+test_valores_invßlidos (test_despesas.TestResumirDespesas.test_valores_invßlidos) ... ok
+
+======================================================================
+FAIL: test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r1\test_despesas.py", line 13, in test_caso_normal
+    self.assertEqual(resultado, {
+AssertionError: {'total_geral': '50.50', 'quantidade_lancamentos': 4, 'por[136 chars] 1}]} != {'total_geral': '40.50', 
+'quantidade_lancamentos': 4, 'por[136 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+                      'quantidade': 3,
+                      'total': '35.50'},
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '15.00'}],
+   'quantidade_lancamentos': 4,
+-  'total_geral': '50.50'}
+?                  ^
+
++  'total_geral': '40.50'}
+?                  ^
+
+
+======================================================================
+FAIL: test_empate (test_despesas.TestResumirDespesas.test_empate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r1\test_despesas.py", line 48, in test_empate
+    self.assertEqual(resultado, {
+AssertionError: {'tot[99 chars]l': '30.00', 'quantidade': 3}, {'categoria': '[44 chars] 1}]} != {'tot[99 chars]l': 
+'40.00', 'quantidade': 4}, {'categoria': '[44 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+-                     'quantidade': 3,
+?                                   ^
+
++                     'quantidade': 4,
+?                                   ^
+
+-                     'total': '30.00'},
+?                               ^
+
++                     'total': '40.00'},
+?                               ^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '10.00'}],
+   'quantidade_lancamentos': 4,
+   'total_geral': '40.00'}
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=2)
+
+
+--- Modelo: qwen_coder_7b | Rodada: 2 | Tempo: 19.88s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_caso_norma...ormal) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empate (test_despesas.TestResumirDespesas.test_empate) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+test_valores_invßlidos (test_despesas.TestResumirDespesas.test_valores_invßlidos) ... ok
+
+======================================================================
+FAIL: test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r2\test_despesas.py", line 13, in test_caso_normal
+    self.assertEqual(resultado, {
+AssertionError: {'total_geral': '51.50', 'quantidade_lancamentos': 4, 'por[136 chars] 1}]} != {'total_geral': '41.50', 
+'quantidade_lancamentos': 4, 'por[136 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+                      'quantidade': 3,
+-                     'total': '35.75'},
+?                                ^ ^^
+
++                     'total': '36.00'},
+?                                ^ ^^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '15.75'}],
+   'quantidade_lancamentos': 4,
+-  'total_geral': '51.50'}
+?                  ^
+
++  'total_geral': '41.50'}
+?                  ^
+
+
+======================================================================
+FAIL: test_empate (test_despesas.TestResumirDespesas.test_empate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r2\test_despesas.py", line 48, in test_empate
+    self.assertEqual(resultado, {
+AssertionError: {'tot[99 chars]l': '30.00', 'quantidade': 3}, {'categoria': '[44 chars] 1}]} != {'tot[99 chars]l': 
+'40.00', 'quantidade': 4}, {'categoria': '[44 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+-                     'quantidade': 3,
+?                                   ^
+
++                     'quantidade': 4,
+?                                   ^
+
+-                     'total': '30.00'},
+?                               ^
+
++                     'total': '40.00'},
+?                               ^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '10.00'}],
+   'quantidade_lancamentos': 4,
+   'total_geral': '40.00'}
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=2)
+
+
+--- Modelo: qwen_coder_7b | Rodada: 3 | Tempo: 21.43s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_caso_norma...ormal) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empate (test_despesas.TestResumirDespesas.test_empate) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+test_valores_invßlidos (test_despesas.TestResumirDespesas.test_valores_invßlidos) ... ok
+
+======================================================================
+FAIL: test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r3\test_despesas.py", line 13, in test_caso_normal
+    self.assertEqual(resultado, {
+AssertionError: {'total_geral': '51.50', 'quantidade_lancamentos': 4, 'por[136 chars] 1}]} != {'total_geral': '41.50', 
+'quantidade_lancamentos': 4, 'por[136 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+                      'quantidade': 3,
+-                     'total': '35.75'},
+?                                ^ ^^
+
++                     'total': '36.00'},
+?                                ^ ^^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '15.75'}],
+   'quantidade_lancamentos': 4,
+-  'total_geral': '51.50'}
+?                  ^
+
++  'total_geral': '41.50'}
+?                  ^
+
+
+======================================================================
+FAIL: test_empate (test_despesas.TestResumirDespesas.test_empate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r3\test_despesas.py", line 48, in test_empate
+    self.assertEqual(resultado, {
+AssertionError: {'tot[99 chars]l': '30.00', 'quantidade': 3}, {'categoria': '[44 chars] 1}]} != {'tot[99 chars]l': 
+'40.00', 'quantidade': 4}, {'categoria': '[44 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+-                     'quantidade': 3,
+?                                   ^
+
++                     'quantidade': 4,
+?                                   ^
+
+-                     'total': '30.00'},
+?                               ^
+
++                     'total': '40.00'},
+?                               ^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '10.00'}],
+   'quantidade_lancamentos': 4,
+   'total_geral': '40.00'}
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)
+
+
+--- Modelo: qwen_coder_7b | Rodada: 4 | Tempo: 20.03s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_caso_norma...ormal) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empate (test_despesas.TestResumirDespesas.test_empate) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+test_valores_invßlidos (test_despesas.TestResumirDespesas.test_valores_invßlidos) ... ok
+
+======================================================================
+FAIL: test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r4\test_despesas.py", line 13, in test_caso_normal
+    self.assertEqual(resultado, {
+AssertionError: {'total_geral': '51.50', 'quantidade_lancamentos': 4, 'por[136 chars] 1}]} != {'total_geral': '41.50', 
+'quantidade_lancamentos': 4, 'por[136 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+                      'quantidade': 3,
+-                     'total': '35.75'},
+?                                ^ ^^
+
++                     'total': '36.00'},
+?                                ^ ^^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '15.75'}],
+   'quantidade_lancamentos': 4,
+-  'total_geral': '51.50'}
+?                  ^
+
++  'total_geral': '41.50'}
+?                  ^
+
+
+======================================================================
+FAIL: test_empate (test_despesas.TestResumirDespesas.test_empate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r4\test_despesas.py", line 48, in test_empate
+    self.assertEqual(resultado, {
+AssertionError: {'tot[99 chars]l': '30.00', 'quantidade': 3}, {'categoria': '[44 chars] 1}]} != {'tot[99 chars]l': 
+'40.00', 'quantidade': 4}, {'categoria': '[44 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+-                     'quantidade': 3,
+?                                   ^
+
++                     'quantidade': 4,
+?                                   ^
+
+-                     'total': '30.00'},
+?                               ^
+
++                     'total': '40.00'},
+?                               ^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '10.00'}],
+   'quantidade_lancamentos': 4,
+   'total_geral': '40.00'}
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+FAILED (failures=2)
+
+
+--- Modelo: qwen_coder_7b | Rodada: 5 | Tempo: 19.78s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_caso_norma...ormal) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_empate (test_despesas.TestResumirDespesas.test_empate) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+test_valores_invßlidos (test_despesas.TestResumirDespesas.test_valores_invßlidos) ... ok
+
+======================================================================
+FAIL: test_caso_normal (test_despesas.TestResumirDespesas.test_caso_normal)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r5\test_despesas.py", line 13, in test_caso_normal
+    self.assertEqual(resultado, {
+AssertionError: {'total_geral': '51.50', 'quantidade_lancamentos': 4, 'por[136 chars] 1}]} != {'total_geral': '41.50', 
+'quantidade_lancamentos': 4, 'por[136 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+                      'quantidade': 3,
+-                     'total': '35.75'},
+?                                ^ ^^
+
++                     'total': '36.00'},
+?                                ^ ^^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '15.75'}],
+   'quantidade_lancamentos': 4,
+-  'total_geral': '51.50'}
+?                  ^
+
++  'total_geral': '41.50'}
+?                  ^
+
+
+======================================================================
+FAIL: test_empate (test_despesas.TestResumirDespesas.test_empate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_coder_7b_r5\test_despesas.py", line 48, in test_empate
+    self.assertEqual(resultado, {
+AssertionError: {'tot[99 chars]l': '30.00', 'quantidade': 3}, {'categoria': '[44 chars] 1}]} != {'tot[99 chars]l': 
+'40.00', 'quantidade': 4}, {'categoria': '[44 chars] 1}]}
+  {'por_categoria': [{'categoria': 'Alimentos',
+-                     'quantidade': 3,
+?                                   ^
+
++                     'quantidade': 4,
+?                                   ^
+
+-                     'total': '30.00'},
+?                               ^
+
++                     'total': '40.00'},
+?                               ^
+
+                     {'categoria': 'Transporte',
+                      'quantidade': 1,
+                      'total': '10.00'}],
+   'quantidade_lancamentos': 4,
+   'total_geral': '40.00'}
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=2)
+
+
+--- Modelo: gemma_3_4b | Rodada: 1 | Tempo: 29.72s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_empate_categorias (test_despesas.TestResumirDespesas.test_empate_categorias) ... ERROR
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empate_cat...rias) ... ERROR:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos) ... ERROR
+test_lancamentos_validos (test_despesas.TestResumirDespesas.test_lancamentos_validos) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+
+======================================================================
+ERROR: test_empate_categorias (test_despesas.TestResumirDespesas.test_empate_categorias)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r1\test_despesas.py", line 50, in test_empate_categorias
+    self.assertEqual(resultado['por_categoria'][0]['categoria'], 'AlimentaþÒo')
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: tuple indices must be integers or slices, not str
+
+======================================================================
+ERROR: test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r1\test_despesas.py", line 40, in test_lancamentos_invalidos
+    resultado = resumir_despesas(despesas)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r1\despesas.py", line 21, in resumir_despesas
+    valor = decimal.Decimal(valor_str)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+======================================================================
+FAIL: test_lancamentos_validos (test_despesas.TestResumirDespesas.test_lancamentos_validos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r1\test_despesas.py", line 21, in test_lancamentos_validos
+    self.assertEqual(resultado['total_geral'], '601.50')
+AssertionError: '651.50' != '601.50'
+- 651.50
+?  ^
++ 601.50
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+FAILED (failures=1, errors=2)
+Lanþamento invßlido: {'categoria': 'AlimentaþÒo', 'valor': '-150.50'}. Erro: Valor da despesa nÒo pode ser negativo.
+
+
+--- Modelo: gemma_3_4b | Rodada: 2 | Tempo: 21.75s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empate_em_...goria) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_lancamentos_com_espacos (test_despesas.TestResumirDespesas.test_lancamentos_com_espacos) ... ok
+test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos) ... ERROR
+test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+
+======================================================================
+ERROR: test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r2\test_despesas.py", line 48, in test_lancamentos_invalidos
+    resultado = resumir_despesas(despesas)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r2\despesas.py", line 21, in resumir_despesas
+    valor = Decimal(valor_str)
+            ^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+======================================================================
+FAIL: test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r2\test_despesas.py", line 61, in test_empate_em_categoria
+    self.assertEqual(resultado['por_categoria'][0]['categoria'], 'AlimentaþÒo')
+AssertionError: 'Moradia' != 'AlimentaþÒo'
+- Moradia
++ AlimentaþÒo
+
+
+======================================================================
+FAIL: test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r2\test_despesas.py", line 21, in test_lancamentos_normais
+    self.assertEqual(resultado['total_geral'], '1926.50')
+AssertionError: '2026.50' != '1926.50'
+- 2026.50
+? ^^
++ 1926.50
+? ^^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2, errors=1)
+Lanþamento invßlido: {'categoria': 'AlimentaþÒo', 'valor': '-150.50'}. Erro: Valor da despesa nÒo pode ser negativo.
+
+
+--- Modelo: gemma_3_4b | Rodada: 3 | Tempo: 21.85s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empate_em_...goria) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_lancamentos_com_espacos (test_despesas.TestResumirDespesas.test_lancamentos_com_espacos) ... ok
+test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos) ... ERROR
+test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+
+======================================================================
+ERROR: test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r3\test_despesas.py", line 48, in test_lancamentos_invalidos
+    resultado = resumir_despesas(despesas)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r3\despesas.py", line 21, in resumir_despesas
+    valor = Decimal(valor_str)
+            ^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+======================================================================
+FAIL: test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r3\test_despesas.py", line 61, in test_empate_em_categoria
+    self.assertEqual(resultado['por_categoria'][0]['categoria'], 'AlimentaþÒo')
+AssertionError: 'Moradia' != 'AlimentaþÒo'
+- Moradia
++ AlimentaþÒo
+
+
+======================================================================
+FAIL: test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r3\test_despesas.py", line 21, in test_lancamentos_normais
+    self.assertEqual(resultado['total_geral'], '1926.50')
+AssertionError: '2026.50' != '1926.50'
+- 2026.50
+? ^^
++ 1926.50
+? ^^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2, errors=1)
+Lanþamento invßlido: {'categoria': 'AlimentaþÒo', 'valor': '-150.50'}. Erro: Valor da despesa nÒo pode ser negativo.
+
+
+--- Modelo: gemma_3_4b | Rodada: 4 | Tempo: 22.22s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empate_em_...goria) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_lancamentos_com_espacos (test_despesas.TestResumirDespesas.test_lancamentos_com_espacos) ... ok
+test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos) ... ERROR
+test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+
+======================================================================
+ERROR: test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r4\test_despesas.py", line 48, in test_lancamentos_invalidos
+    resultado = resumir_despesas(despesas)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r4\despesas.py", line 21, in resumir_despesas
+    valor = Decimal(valor_str)
+            ^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+======================================================================
+FAIL: test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r4\test_despesas.py", line 61, in test_empate_em_categoria
+    self.assertEqual(resultado['por_categoria'][0]['categoria'], 'AlimentaþÒo')
+AssertionError: 'Moradia' != 'AlimentaþÒo'
+- Moradia
++ AlimentaþÒo
+
+
+======================================================================
+FAIL: test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r4\test_despesas.py", line 21, in test_lancamentos_normais
+    self.assertEqual(resultado['total_geral'], '1926.50')
+AssertionError: '2026.50' != '1926.50'
+- 2026.50
+? ^^
++ 1926.50
+? ^^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.002s
+
+FAILED (failures=2, errors=1)
+Lanþamento invßlido: {'categoria': 'AlimentaþÒo', 'valor': '-150.50'}. Erro: Valor da despesa nÒo pode ser negativo.
+
+
+--- Modelo: gemma_3_4b | Rodada: 5 | Tempo: 23.53s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria) ... FAIL
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_empate_em_...goria) ... FAIL:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_lancamentos_com_espacos (test_despesas.TestResumirDespesas.test_lancamentos_com_espacos) ... ok
+test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos) ... ERROR
+test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais) ... FAIL
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia) ... ok
+
+======================================================================
+ERROR: test_lancamentos_invalidos (test_despesas.TestResumirDespesas.test_lancamentos_invalidos)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r5\test_despesas.py", line 48, in test_lancamentos_invalidos
+    resultado = resumir_despesas(despesas)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r5\despesas.py", line 21, in resumir_despesas
+    valor = Decimal(valor_str)
+            ^^^^^^^^^^^^^^^^^^
+decimal.InvalidOperation: [<class 'decimal.ConversionSyntax'>]
+
+======================================================================
+FAIL: test_empate_em_categoria (test_despesas.TestResumirDespesas.test_empate_em_categoria)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r5\test_despesas.py", line 61, in test_empate_em_categoria
+    self.assertEqual(resultado['por_categoria'][0]['categoria'], 'AlimentaþÒo')
+AssertionError: 'Moradia' != 'AlimentaþÒo'
+- Moradia
++ AlimentaþÒo
+
+
+======================================================================
+FAIL: test_lancamentos_normais (test_despesas.TestResumirDespesas.test_lancamentos_normais)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\gemma_3_4b_r5\test_despesas.py", line 21, in test_lancamentos_normais
+    self.assertEqual(resultado['total_geral'], '1926.50')
+AssertionError: '2026.50' != '1926.50'
+- 2026.50
+? ^^
++ 1926.50
+? ^^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=2, errors=1)
+Lanþamento invßlido: {'categoria': 'AlimentaþÒo', 'valor': '-150.50'}. Erro: Valor da despesa nÒo pode ser negativo.
+
+
+--- Modelo: qwen_3_5_4b | Rodada: 1 | Tempo: 38.12s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_casos_norm..._casos_normais):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Teste com casos normais de entrada ... FAIL
+test_decimal_precisao (test_despesas.TestResumirDespesas.test_decimal_precisao)
+Teste com valores decimais complexos ... ok
+test_empate_ordenacao_alfabetica (test_despesas.TestResumirDespesas.test_empate_ordenacao_alfabetica)
+Teste com empate no valor (ordem alfabÚtica) ... ok
+test_entrada_invalida_elemento_nao_dict (test_despesas.TestResumirDespesas.test_entrada_invalida_elemento_nao_dict)
+Teste com elemento que nÒo Ú dicionßrio ... ok
+test_entrada_invalida_nao_lista (test_despesas.TestResumirDespesas.test_entrada_invalida_nao_lista)
+Teste com entrada invßlida (nÒo lista) ... ok
+test_espacos_em_categorias (test_despesas.TestResumirDespesas.test_espacos_em_categorias)
+Teste com categorias que tÛm espaþos extras ... ok
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia)
+Teste com lista vazia ... ok
+test_valores_invalidos (test_despesas.TestResumirDespesas.test_valores_invalidos)
+Teste com valores invßlidos ... ok
+
+======================================================================
+FAIL: test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+Teste com casos normais de entrada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_3_5_4b_r1\test_despesas.py", line 20, in test_casos_normais
+    self.assertEqual(resultado["total_geral"], "226.00")
+AssertionError: '216.00' != '226.00'
+- 216.00
+?  ^
++ 226.00
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)
+
+
+--- Modelo: qwen_3_5_4b | Rodada: 2 | Tempo: 29.61s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_casos_norm..._casos_normais):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Teste com casos normais de entrada ... FAIL
+test_decimal_precisao (test_despesas.TestResumirDespesas.test_decimal_precisao)
+Teste com valores decimais complexos ... ok
+test_empate_ordenacao_alfabetica (test_despesas.TestResumirDespesas.test_empate_ordenacao_alfabetica)
+Teste com empate no valor (ordem alfabÚtica) ... ok
+test_entrada_invalida_elemento_nao_dict (test_despesas.TestResumirDespesas.test_entrada_invalida_elemento_nao_dict)
+Teste com elemento que nÒo Ú dicionßrio ... ok
+test_entrada_invalida_nao_lista (test_despesas.TestResumirDespesas.test_entrada_invalida_nao_lista)
+Teste com entrada invßlida (nÒo lista) ... ok
+test_espacos_em_categorias (test_despesas.TestResumirDespesas.test_espacos_em_categorias)
+Teste com categorias que tÛm espaþos extras ... ok
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia)
+Teste com lista vazia ... ok
+test_valores_invalidos (test_despesas.TestResumirDespesas.test_valores_invalidos)
+Teste com valores invßlidos ... ok
+
+======================================================================
+FAIL: test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+Teste com casos normais de entrada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_3_5_4b_r2\test_despesas.py", line 20, in test_casos_normais
+    self.assertEqual(resultado["total_geral"], "226.00")
+AssertionError: '216.00' != '226.00'
+- 216.00
+?  ^
++ 226.00
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)
+
+
+--- Modelo: qwen_3_5_4b | Rodada: 3 | Tempo: 29.42s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_casos_norm..._casos_normais):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Teste com casos normais de entrada ... FAIL
+test_decimal_precisao (test_despesas.TestResumirDespesas.test_decimal_precisao)
+Teste com valores decimais complexos ... ok
+test_empate_ordenacao_alfabetica (test_despesas.TestResumirDespesas.test_empate_ordenacao_alfabetica)
+Teste com empate no valor (ordem alfabÚtica) ... ok
+test_entrada_invalida_elemento_nao_dict (test_despesas.TestResumirDespesas.test_entrada_invalida_elemento_nao_dict)
+Teste com elemento que nÒo Ú dicionßrio ... ok
+test_entrada_invalida_nao_lista (test_despesas.TestResumirDespesas.test_entrada_invalida_nao_lista)
+Teste com entrada invßlida (nÒo lista) ... ok
+test_espacos_em_categorias (test_despesas.TestResumirDespesas.test_espacos_em_categorias)
+Teste com categorias que tÛm espaþos extras ... ok
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia)
+Teste com lista vazia ... ok
+test_valores_invalidos (test_despesas.TestResumirDespesas.test_valores_invalidos)
+Teste com valores invßlidos ... ok
+
+======================================================================
+FAIL: test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+Teste com casos normais de entrada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_3_5_4b_r3\test_despesas.py", line 20, in test_casos_normais
+    self.assertEqual(resultado["total_geral"], "226.00")
+AssertionError: '216.00' != '226.00'
+- 216.00
+?  ^
++ 226.00
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)
+
+
+--- Modelo: qwen_3_5_4b | Rodada: 4 | Tempo: 28.3s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_casos_norm..._casos_normais):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Teste com casos normais de entrada ... FAIL
+test_decimal_precisao (test_despesas.TestResumirDespesas.test_decimal_precisao)
+Teste com valores decimais complexos ... ok
+test_empate_ordenacao_alfabetica (test_despesas.TestResumirDespesas.test_empate_ordenacao_alfabetica)
+Teste com empate no valor (ordem alfabÚtica) ... ok
+test_entrada_invalida_elemento_nao_dict (test_despesas.TestResumirDespesas.test_entrada_invalida_elemento_nao_dict)
+Teste com elemento que nÒo Ú dicionßrio ... ok
+test_entrada_invalida_nao_lista (test_despesas.TestResumirDespesas.test_entrada_invalida_nao_lista)
+Teste com entrada invßlida (nÒo lista) ... ok
+test_espacos_em_categorias (test_despesas.TestResumirDespesas.test_espacos_em_categorias)
+Teste com categorias que tÛm espaþos extras ... ok
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia)
+Teste com lista vazia ... ok
+test_valores_invalidos (test_despesas.TestResumirDespesas.test_valores_invalidos)
+Teste com valores invßlidos ... ok
+
+======================================================================
+FAIL: test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+Teste com casos normais de entrada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_3_5_4b_r4\test_despesas.py", line 20, in test_casos_normais
+    self.assertEqual(resultado["total_geral"], "226.00")
+AssertionError: '216.00' != '226.00'
+- 216.00
+?  ^
++ 226.00
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)
+
+
+--- Modelo: qwen_3_5_4b | Rodada: 5 | Tempo: 27.8s ---
+Arquivos gerados: .aider.chat.history.md, .gitignore, despesas.py, test_despesas.py
+Saída unittest:
+python : test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+No linha:31 caractere:27
++         $resultadoTeste = python -m unittest -v 2>&1 | Out-String
++                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_casos_norm..._casos_normais):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Teste com casos normais de entrada ... FAIL
+test_decimal_precisao (test_despesas.TestResumirDespesas.test_decimal_precisao)
+Teste com valores decimais complexos ... ok
+test_empate_ordenacao_alfabetica (test_despesas.TestResumirDespesas.test_empate_ordenacao_alfabetica)
+Teste com empate no valor (ordem alfabÚtica) ... ok
+test_entrada_invalida_elemento_nao_dict (test_despesas.TestResumirDespesas.test_entrada_invalida_elemento_nao_dict)
+Teste com elemento que nÒo Ú dicionßrio ... ok
+test_entrada_invalida_nao_lista (test_despesas.TestResumirDespesas.test_entrada_invalida_nao_lista)
+Teste com entrada invßlida (nÒo lista) ... ok
+test_espacos_em_categorias (test_despesas.TestResumirDespesas.test_espacos_em_categorias)
+Teste com categorias que tÛm espaþos extras ... ok
+test_lista_vazia (test_despesas.TestResumirDespesas.test_lista_vazia)
+Teste com lista vazia ... ok
+test_valores_invalidos (test_despesas.TestResumirDespesas.test_valores_invalidos)
+Teste com valores invßlidos ... ok
+
+======================================================================
+FAIL: test_casos_normais (test_despesas.TestResumirDespesas.test_casos_normais)
+Teste com casos normais de entrada
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Experimento_LLM\agente_codigo\qwen_3_5_4b_r5\test_despesas.py", line 20, in test_casos_normais
+    self.assertEqual(resultado["total_geral"], "226.00")
+AssertionError: '216.00' != '226.00'
+- 216.00
+?  ^
++ 226.00
+?  ^
+
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.001s
+
+FAILED (failures=1)
+

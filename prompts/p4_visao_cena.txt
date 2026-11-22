@@ -1,0 +1,3 @@
+Analise cuidadosamente a imagem anexada.
+Descreva detalhadamente os objetos visíveis na cena, informando suas cores predominantes, quantidades e relações espaciais (esquerda, direita, centro, primeiro plano ou fundo).
+Não invente informações nem deduza elementos que não estejam claramente visíveis na imagem.

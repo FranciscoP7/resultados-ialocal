@@ -1,0 +1,19 @@
+﻿=== VERSÃO DO OLLAMA ===
+ollama version is 0.40.11
+
+=== MODELOS INSTALADOS (HASH E TAMANHO) ===
+NAME                                        ID              SIZE      MODIFIED               
+qwen3-vl:4b                                 a1b29c246319    3.3 GB    Less than a second ago    
+hf.co/ggml-org/Qwen3.5-4B-GGUF:Q4_K_M       7471faf971c3    3.4 GB    4 seconds ago             
+hf.co/ggml-org/gemma-3-4b-it-GGUF:Q4_K_M    e5a625c803c6    3.3 GB    5 seconds ago             
+qwen2.5-coder:7b                            dae161e27b0e    4.7 GB    13 days ago               
+qwen3.5:9b                                  56671c2ab938    6.6 GB    13 days ago               
+qwen3.5:4b                                  d8b0f5e9760c    3.3 GB    13 days ago               
+qwen3.8:27b                                 aaee06c39dcf    17 GB     3 weeks ago               
+llama3.2:3b-instruct-q8_0                   e410b836fe61    3.4 GB    3 weeks ago               
+llama3.2:3b-instruct-q4_K_M                 a80c4f17acd5    2.0 GB    3 weeks ago               
+llama3.2:1b-instruct-q4_K_M                 22bc6b92eb01    807 MB    3 weeks ago               
+
+=== GPU E DRIVER NVIDIA ===
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 3070, 610.88, 8192 MiB

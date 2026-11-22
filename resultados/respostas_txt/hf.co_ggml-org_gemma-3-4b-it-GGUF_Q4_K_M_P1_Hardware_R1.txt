@@ -1,0 +1,18 @@
+Vamos analisar as diferenças entre RAM, VRAM e SSD no contexto de LLMs:
+
+**1. Memória RAM (Random Access Memory):**
+   * **Função:** Armazenamento temporário de dados e instruções que o sistema operacional e os aplicativos (incluindo o LLM) estão usando ativamente.
+   * **Participação:** O LLM é carregado da unidade de armazenamento (SSD) para a RAM. Durante a execução, a RAM fornece acesso rápido aos parâmetros do modelo e aos dados de entrada/saída.
+   * **Problemas:** Capacidade insuficiente causa lentidão, travamentos e impossibilidade de carregar modelos maiores.
+
+**2. Memória VRAM (Video RAM):**
+   * **Função:** Armazenamento dedicado da placa de vídeo (GPU), utilizada para cálculos paralelos, essenciais para a inferência de LLMs.
+   * **Participação:** A GPU carrega partes do modelo na VRAM e realiza as operações de processamento (multiplicação de matrizes) de forma otimizada.
+   * **Problemas:** VRAM insuficiente limita o tamanho do modelo que pode ser executado e causa lentidão extrema.
+
+**3. Armazenamento SSD (Solid State Drive):**
+   * **Função:** Armazenamento permanente de dados, incluindo o sistema operacional, aplicativos e modelos de IA.
+   * **Participação:** O SSD armazena o arquivo completo do LLM. O carregamento inicial do modelo do SSD para a RAM é crucial.
+   * **Problemas:** Velocidade de leitura/escrita lenta do SSD pode impactar o tempo de carregamento do modelo.
+
+**Memória Compartilhada vs. VRAM:** A memória compartilhada do sistema (RAM) não é equivalente à VRAM. A VRAM é dedicada à GPU e otimizada para cálculos paralelos, enquanto a RAM é compartilhada com todo o sistema e tem menor latência para operações de GPU.  Usar a RAM como substituta da VRAM resulta em desempenho drasticamente inferior.

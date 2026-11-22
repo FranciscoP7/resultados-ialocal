@@ -1,0 +1,10 @@
+Analise cuidadosamente a imagem anexada.
+Você recebeu a imagem de um documento comercial contendo uma tabela de produtos, quantidades e preços unitários.
+Execute as seguintes tarefas:
+1. Identifique e transcreva todos os produtos apresentados.
+2. Extraia a quantidade e o preço unitário de cada produto.
+3. Calcule o subtotal de cada item, multiplicando a quantidade pelo preço unitário.
+4. Calcule o valor total de todos os produtos.
+5. Verifique se os cálculos estão matematicamente corretos.
+Organize os resultados em uma tabela com as colunas: Produto, Quantidade, Preço unitário e Subtotal, e apresente o total geral ao final.
+Não invente informações que não estejam visíveis na imagem.

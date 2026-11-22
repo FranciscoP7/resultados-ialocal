@@ -1,0 +1,47 @@
+Vamos resolver o problema passo a passo, utilizando as informações fornecidas para definir as equações e encontrar a solução.
+
+**Definindo as variáveis:**
+
+*   Seja 'x' o número de sensores na caixa A.
+*   A caixa B terá o dobro da quantidade de sensores da caixa A, então a caixa B terá '2x' sensores.
+*   A caixa C terá seis sensores a mais do que a caixa A, então a caixa C terá 'x + 6' sensores.
+
+**Montando a equação:**
+
+Sabemos que a soma dos sensores em todas as três caixas deve ser igual a 46. Portanto, podemos escrever a seguinte equação:
+
+x + 2x + (x + 6) = 46
+
+**Resolvendo a equação:**
+
+1.  Combine os termos semelhantes:
+    4x + 6 = 46
+2.  Subtraia 6 de ambos os lados da equação:
+    4x = 40
+3.  Divida ambos os lados por 4:
+    x = 10
+
+**Determinando o número de sensores em cada caixa:**
+
+*   Caixa A: x = 10 sensores
+*   Caixa B: 2x = 2 * 10 = 20 sensores
+*   Caixa C: x + 6 = 10 + 6 = 16 sensores
+
+**Resultado Final:**
+
+*   Caixa A: 10 sensores
+*   Caixa B: 20 sensores
+*   Caixa C: 16 sensores
+
+**Verificação:**
+
+Para verificar se a solução está correta, vamos somar o número de sensores em cada caixa e verificar se o resultado é igual a 46:
+
+10 + 20 + 16 = 46
+
+Além disso, vamos verificar se as condições do problema foram atendidas:
+
+*   A caixa B deve conter o dobro da quantidade de sensores da caixa A: 20 = 2 * 10 (Verificado)
+*   A caixa C deve conter seis sensores a mais do que a caixa A: 16 = 10 + 6 (Verificado)
+
+Como todas as condições foram atendidas e a soma dos sensores é 46, a solução está correta.

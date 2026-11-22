@@ -1,0 +1,21 @@
+Aqui está a análise da tabela do orçamento comercial, conforme solicitado:
+
+**Tabela de Produtos e Cálculos**
+
+| Produto                     | Quantidade | Preço Unitário (R$) | Subtotal (R$) |
+|-----------------------------|------------|---------------------|---------------|
+| Teclado Mecânico USB        | 2          | 245.50              | 491.00        |
+| Mouse Óptico Sem Fio         | 3          | 89.90               | 269.70        |
+| Cabo HDMI 2.1 (2 metros)    | 4          | 42.00               | 168.00        |
+| Suporte Articulado Monitor   | 1          | 185.00              | 185.00        |
+| **TOTAL GERAL:**            |            |                     | **1113.70**   |
+
+**Resumo dos Cálculos:**
+
+*   **Teclado Mecânico USB:** 2 x R$245.50 = R$491.00
+*   **Mouse Óptico Sem Fio:** 3 x R$89.90 = R$269.70
+*   **Cabo HDMI 2.1 (2 metros):** 4 x R$42.00 = R$168.00
+*   **Suporte Articulado Monitor:** 1 x R$185.00 = R$185.00
+*   **Total Geral:** R$491.00 + R$269.70 + R$168.00 + R$185.00 = R$1113.70
+
+**Verificação:** Os cálculos estão matematicamente corretos. O total geral apresentado na imagem (R$1113.70) corresponde ao resultado dos cálculos realizados.
